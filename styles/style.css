@@ -1,15 +1,10 @@
 /* место для вашего кода */
-body {
-	font-family: 'Raleway', sans-serif;
-	font-weight: normal;
-}
 
 .header {
 	display: grid;
 	grid-template-columns: 2fr 1fr 2fr;
 	width: 1052px;
-	height: 105px;
-	margin: 92px auto 96px;
+	margin: 92px auto 92px;
 }
 .header__menu {
 	display: flex;
@@ -32,15 +27,12 @@ body {
 	display: block;
 	justify-self: center;
 	width: 129.11px;
-	height: 104.65px;
 }
 .header__logo-image {
 	height: 106px;
 	width: 133px;
 }
-.header__address {
-	justify-self: end;
-	height: 98px;
+.address {
 	width: 240px;
 	margin-right: 26px;
 	margin-top: 10px;
@@ -48,65 +40,59 @@ body {
 	font-size: 18px;
 	font-style: normal;
 }
+.header__address {
+	justify-self: end;
+}
 .cover {
-	height: 757px;
+	position: relative;
+	min-height: 757px;
 	margin-bottom: 179px;
 	background-image: url(../images/cover.jpg);
 	background-size: cover;
 	background-position: center;
 }
 .overlay {
+	position: absolute;
+	z-index: 0;
 	height: 100%;
-	padding-top: 165px;
+	width: 100%;
 	background-color: rgba(0, 0, 0, 0.6);
 }
 .cover__title {
-	height: 355px;
+	position: relative;
+	padding-top: 165px;
 	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 	line-height: 123px;
 	color: #ffffff;
 	font-size: 100px;
-	font-weight: bold;
+	text-transform: uppercase;
 }
-
 .aligned-text {
 	display: block;
 }
-
 .aligned-text_center {
-	padding-left: 286px;
+	text-align: center;
 }
 .aligned-text_right {
 	text-align: right;
 }
-.first-word {
-	letter-spacing: 32px;
-}
-.second-word {
-	letter-spacing: 31px;
-}
-.third-word {
+.letter-spacing-normal{
 	letter-spacing: 30px;
 }
-.fixed-letter {
+.letter-spacing-extended {
+	letter-spacing: 60px;
+}
+.no-letter-spacing {
 	letter-spacing: 0;
 }
-.first-letter {
-	padding-right: 29px;
-}
-.last-letter {
-	letter-spacing: 58px;
-}
-.last-letter-e {
-	padding-left: 29px;
-}
 .cover__description {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 	align-content: center;
-	margin: 135px 40px 51px 79px;
+	margin: 122px 40px 51px 79px;
 	color: #ffffff;
 	text-transform: uppercase;
 }
@@ -120,17 +106,17 @@ body {
 .bet-button {
 	padding: 12px 32px 11px 31px;
 	margin-right: 10px;
-	border-color: #ffffff;
+	border-color: currentColor;
 	border-width: 1px;
 	color: inherit;
 	background-color: transparent;
 	cursor: pointer;
+	font-family: 'Raleway', sans-serif;
 	font-size: 22px;
 	font-weight: normal;
 	text-transform: uppercase;
 }
 .lots {
-	height: 692px;
 	width: 1052px;
 	margin-bottom: 146px;
 	margin-left: auto;
@@ -141,11 +127,20 @@ body {
 	margin-bottom: 27px;
 	font-size: 40px;
 	font-weight: bold;
+	text-transform: uppercase;
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	padding: 51px 40px 48px;
 }
 .card-link {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	position: relative;
 	height: 100%;
 	width: 100%;
 	color: #ffffff;
@@ -154,19 +149,19 @@ body {
 	text-decoration: none;
 	font-size: 20px;
 }
-.first-card {
+.card_type_film {
 	background-image: url(../images/card-lot-01.jpg);
 }
-.second-card {
+.card_type_book {
 	background-image: url(../images/card-lot-02.jpg);
 }
-.last-card {
+.card_type_picture {
 	background-image: url(../images/card-lot-03.jpg);
 }
 .lots__card-list {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	gap: 25px;
 }
 .lots__card-list-item {
 	width: 334px;
@@ -175,19 +170,16 @@ body {
 	list-style-type: none;
 }
 .card__heading {
+	position: relative;
 	font-size: 22px;
 	font-weight: bold;
 	text-decoration: underline;
 	text-transform: uppercase;
 }
-.card-overlay {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	height: 100%;
-	padding: 51px 40px 48px;
-	background-color: rgba(0, 0, 0, 0.6);
+.card__text {
+	position: relative;
 }
+
 .lots__look-more-link {
 	margin-left: 40px;
 	font-size: 20px;
@@ -196,9 +188,8 @@ body {
 	display: grid;
 	grid-template-columns: 334px 1fr;
 	gap: 25px;
-	height: 692px;
 	width: 1052px;
-	margin-bottom: 83px;
+	margin-bottom: 159px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -233,7 +224,6 @@ body {
 .footer {
 	display: grid;
 	grid-template-columns: 2fr 1fr 2fr;
-	height: 98px;
 	width: 1000px;
 	margin: 0 auto 88px;
 	font-size: 18px;
@@ -259,7 +249,6 @@ body {
 .footer__social-list {
 	display: flex;
 	justify-content: space-between;
-	height: 48px;
 	width: 240px;
 	list-style-type: none;
 }
