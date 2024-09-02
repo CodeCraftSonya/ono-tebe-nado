@@ -53,6 +53,7 @@
 }
 .overlay {
 	position: absolute;
+	inset: 0;
 	z-index: 0;
 	height: 100%;
 	width: 100%;
@@ -78,7 +79,7 @@
 .aligned-text_right {
 	text-align: right;
 }
-.letter-spacing-normal{
+.letter-spacing-normal {
 	letter-spacing: 30px;
 }
 .letter-spacing-extended {
@@ -189,7 +190,7 @@
 	grid-template-columns: 334px 1fr;
 	gap: 25px;
 	width: 1052px;
-	margin-bottom: 159px;
+	margin-bottom: 151px;
 	margin-left: auto;
 	margin-right: auto;
 }
