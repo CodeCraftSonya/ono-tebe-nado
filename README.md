@@ -1,1 +1,1 @@
-https://github.com/SonyaProjects/ono-tebe-nado.git
+https://github.com/CodeCraftSonya/ono-tebe-nado.git
